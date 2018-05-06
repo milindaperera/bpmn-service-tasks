@@ -18,6 +18,16 @@
 
 package org.wso2.sample.bpmn.helloworld;
 
-public class HelloWorld {
+import org.activiti.engine.delegate.DelegateExecution;
+import org.activiti.engine.delegate.JavaDelegate;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
+public class HelloWorld implements JavaDelegate {
+
+    private static Log log = LogFactory.getLog(HelloWorld.class);
+    @Override
+    public void execute(DelegateExecution delegateExecution) throws Exception {
+        log.info("======= Hello World !!! This is sample service task ======");
+    }
 }

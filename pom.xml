@@ -26,6 +26,11 @@
                 <artifactId>activiti-all</artifactId>
                 <version>${org.activiti.wso2.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon</groupId>
+                <artifactId>org.wso2.carbon.core</artifactId>
+                <version>${carbon.kernel.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -45,6 +50,7 @@
 
     <properties>
         <org.activiti.wso2.version>5.21.0.wso2v1</org.activiti.wso2.version>
+        <carbon.kernel.version>4.4.26</carbon.kernel.version>
     </properties>
 
 </project>
